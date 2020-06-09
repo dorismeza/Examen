@@ -15,7 +15,7 @@ Public Class Form2
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim Cancel As Integer
-        If (MsgBox("Esta seguro que desea salir ", vbCritical + vbYesNo) = vbYes) Then
+        If (MsgBox("¿Esta seguro que desea salir? ", vbCritical + vbYesNo) = vbYes) Then
             End
         Else
             Cancel = 1
