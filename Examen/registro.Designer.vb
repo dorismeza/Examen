@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class registro
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,10 +20,11 @@ Partial Class registro
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(registro))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtnombre = New System.Windows.Forms.TextBox()
+        Me.txtusuario = New System.Windows.Forms.TextBox()
         Me.txtcontraseña = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -32,59 +33,77 @@ Partial Class registro
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(26, 32)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Location = New System.Drawing.Point(170, 30)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(123, 16)
+        Me.Label1.Size = New System.Drawing.Size(67, 18)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Nombre de usuario"
+        Me.Label1.Text = "Usuario"
         '
-        'txtnombre
+        'txtusuario
         '
-        Me.txtnombre.Location = New System.Drawing.Point(155, 32)
-        Me.txtnombre.Name = "txtnombre"
-        Me.txtnombre.Size = New System.Drawing.Size(100, 22)
-        Me.txtnombre.TabIndex = 1
-        Me.txtnombre.Text = "Administrador"
+        Me.txtusuario.Location = New System.Drawing.Point(144, 62)
+        Me.txtusuario.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.txtusuario.Name = "txtusuario"
+        Me.txtusuario.Size = New System.Drawing.Size(124, 24)
+        Me.txtusuario.TabIndex = 1
         '
         'txtcontraseña
         '
-        Me.txtcontraseña.Location = New System.Drawing.Point(109, 98)
+        Me.txtcontraseña.Location = New System.Drawing.Point(144, 157)
+        Me.txtcontraseña.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.txtcontraseña.MaxLength = 14
         Me.txtcontraseña.Name = "txtcontraseña"
-        Me.txtcontraseña.Size = New System.Drawing.Size(100, 22)
+        Me.txtcontraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtcontraseña.Size = New System.Drawing.Size(124, 24)
         Me.txtcontraseña.TabIndex = 2
-        Me.txtcontraseña.Text = "SinHacer2020"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(26, 98)
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Location = New System.Drawing.Point(158, 126)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(77, 16)
+        Me.Label2.Size = New System.Drawing.Size(95, 18)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Contraseña"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(119, 152)
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.ForeColor = System.Drawing.Color.Yellow
+        Me.Button1.Location = New System.Drawing.Point(135, 215)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(151, 36)
         Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Aceptar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Text = "ENTRAR"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'registro
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(333, 217)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(430, 275)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtcontraseña)
-        Me.Controls.Add(Me.txtnombre)
+        Me.Controls.Add(Me.txtusuario)
         Me.Controls.Add(Me.Label1)
-        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.Yellow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "registro"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "registro"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -92,7 +111,7 @@ Partial Class registro
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents txtnombre As TextBox
+    Friend WithEvents txtusuario As TextBox
     Friend WithEvents txtcontraseña As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
